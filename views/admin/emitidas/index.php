@@ -1,9 +1,9 @@
 <h2 class="dashboard__heading"><?php echo $titulo?></h2>
 <div class="dashboard__contenedor-boton">
-    <a class="dashboard__boton" href="/admin/emitidas/todas">
+  <!--   <a class="dashboard__boton" href="/admin/emitidas/todas">
         <i class="fa-solid fa-circle-plus"></i>
         Ver todas
-    </a>
+    </a> -->
 </div>
 
 <div class="dashboard__contenedor" id="contenedorEmitidasPendientes">

@@ -111,7 +111,7 @@
     &__contenedor-boton{
        @include m.tablet{
             display: flex;
-            justify-content: center;
+            justify-content: right;
             margin-bottom: 2rem
         
        }
@@ -121,8 +121,9 @@
         @include m.boton(v.$azul, v.$blanco);
         text-transform: uppercase;
         font-size: 1.4rem;
-        @include m.tablet{
-            width: 100%;
+        width: 100%;
+        @include m.telefono{
+            width: auto;
         }
     }
 

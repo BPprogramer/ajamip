@@ -900,7 +900,7 @@ h4 {
 @media (min-width: 768px) {
   .dashboard__contenedor-boton {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     margin-bottom: 2rem;
   }
 }
@@ -918,14 +918,15 @@ h4 {
   display: inline-block;
   text-transform: uppercase;
   font-size: 1.4rem;
+  width: 100%;
 }
 .dashboard__boton:hover {
   background-color: #0063c1;
   cursor: pointer;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .dashboard__boton {
-    width: 100%;
+    width: auto;
   }
 }
 .dashboard__contenedor, .dashboard__formulario {

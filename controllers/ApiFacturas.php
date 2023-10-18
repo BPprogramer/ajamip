@@ -92,7 +92,7 @@ echo "</pre>"; */
                 $pdf->SetMargins(17,10, 17);
                 // # Logo de la empresa formato png #
 
-                $pdf->Image('../public/build/img/logo.png',17,$imagen_posicion,52,38,'PNG');
+                $pdf->Image('../public/build/img/logo.jpg',17,$imagen_posicion,52,38,'JPEG');
                 // Relleno rojo (RGB)
                 
             
@@ -105,31 +105,31 @@ echo "</pre>"; */
                 $pdf->Cell(87);
                 $pdf->SetFont('dejavusans','B',11);
                 $pdf->SetTextColor(11,78,187);
-                $pdf->Cell(150,10,'Asociación de Usuarios Administradores de Acueducto, Alcantarillado y Aseo',0,0,'C');
+                $pdf->Cell(150,10,'ASOCIACIÓN JUNTA ADMINISTRADORA DE USUARIOS DEL ACUEDUCTO MINA DE PIEDRA',0,0,'C');
 
                 $pdf->Ln(5);
                 $pdf->Cell(87);
-                $pdf->Cell(150,10,'del Casco Urbano de El Tablón de Gómez',0,0,'C');
+                $pdf->Cell(150,10,'AJAMIP',0,0,'C');
                 $pdf->Ln(6);
                 $pdf->Cell(87);
                 $pdf->SetFont('dejavusans','B',14);
                 $pdf->SetTextColor(0,0,0);
-                $pdf->Cell(150,10,'ASUAAASTAB',0,0,'C');
+                $pdf->Cell(150,10,'VEREDA CONSUELO DE CHILLANQUER',0,0,'C');
                 $pdf->Ln(6);
                 $pdf->Cell(87);
                 $pdf->SetFont('dejavusans','B',10);
                 $pdf->SetTextColor(0,0,0);
-                $pdf->Cell(150,10,'Nit: 900324139-0',0,0,'C');
+                $pdf->Cell(150,10,'Nit: 900.342.751-5',0,0,'C');
                 $pdf->Ln(6);
                 $pdf->Cell(87);
                 $pdf->SetFont('dejavusans','B',10);
                 $pdf->SetTextColor(0,0,0);
-                $pdf->Cell(150,10,'3216549877',0,0,'C');
+                $pdf->Cell(150,10,'31162255771',0,0,'C');
                 $pdf->Ln(6);
                 $pdf->Cell(87);
                 $pdf->SetFont('dejavusans','B',10);
                 $pdf->SetTextColor(0,0,0);
-                $pdf->Cell(150,10,'El Tablón de Gómez',0,0,'C');
+                $pdf->Cell(150,10,'MUNICIPIO DE GUACHUCAL',0,0,'C');
 
                 $pdf->Ln(10);
 
@@ -478,7 +478,7 @@ echo "</pre>"; */
                 $pdf->Ln(15);
 
                 $pdf->SetFont('dejavusans','B',10);
-                $pdf->Cell(264,6,"Punto de pago, oficina principal de ASUAAASTAB ubicada en la antigua Alcaldía ",1,0,'C',true);
+                $pdf->Cell(264,6,"Punto de pago, oficina principal de AJAMIP en la vereda Consuelo de Chillanquer",1,0,'C',true);
                 $pdf->Ln(6);
 
                 
@@ -782,7 +782,7 @@ echo "</pre>"; */
             $pdf->SetMargins(17,10, 17);
             // # Logo de la empresa formato png #
 
-             $pdf->Image('../public/build/img/logo.png',17,10,52,38,'PNG');
+             $pdf->Image('../public/build/img/logo.jpg',17,10,52,38,'JPEG');
                 // Relleno rojo (RGB)
              
          
@@ -792,34 +792,35 @@ echo "</pre>"; */
             
 
             // # Encabezado y datos de la empresa #
-            $pdf->Cell(87);
-            $pdf->SetFont('dejavusans','B',11);
-            $pdf->SetTextColor(11,78,187);
-            $pdf->Cell(150,10,'Asociación de Usuarios Administradores de Acueducto, Alcantarillado y Aseo',0,0,'C');
+             // # Encabezado y datos de la empresa #
+             $pdf->Cell(87);
+             $pdf->SetFont('dejavusans','B',11);
+             $pdf->SetTextColor(11,78,187);
+             $pdf->Cell(150,10,'ASOCIACIÓN JUNTA ADMINISTRADORA DE USUARIOS DEL ACUEDUCTO MINA DE PIEDRA',0,0,'C');
 
-            $pdf->Ln(5);
-            $pdf->Cell(87);
-            $pdf->Cell(150,10,'del Casco Urbano de El Tablón de Gómez',0,0,'C');
-            $pdf->Ln(6);
-            $pdf->Cell(87);
-            $pdf->SetFont('dejavusans','B',14);
-            $pdf->SetTextColor(0,0,0);
-            $pdf->Cell(150,10,'ASUAAASTAB',0,0,'C');
-            $pdf->Ln(6);
-            $pdf->Cell(87);
-            $pdf->SetFont('dejavusans','B',10);
-            $pdf->SetTextColor(0,0,0);
-            $pdf->Cell(150,10,'Nit: 900324139-0',0,0,'C');
-            $pdf->Ln(6);
-            $pdf->Cell(87);
-            $pdf->SetFont('dejavusans','B',10);
-            $pdf->SetTextColor(0,0,0);
-            $pdf->Cell(150,10,'3216549877',0,0,'C');
-            $pdf->Ln(6);
-            $pdf->Cell(87);
-            $pdf->SetFont('dejavusans','B',10);
-            $pdf->SetTextColor(0,0,0);
-            $pdf->Cell(150,10,'El Tablón de Gómez',0,0,'C');
+             $pdf->Ln(5);
+             $pdf->Cell(87);
+             $pdf->Cell(150,10,'AJAMIP',0,0,'C');
+             $pdf->Ln(6);
+             $pdf->Cell(87);
+             $pdf->SetFont('dejavusans','B',14);
+             $pdf->SetTextColor(0,0,0);
+             $pdf->Cell(150,10,'VEREDA CONSUELO DE CHILLANQUER',0,0,'C');
+             $pdf->Ln(6);
+             $pdf->Cell(87);
+             $pdf->SetFont('dejavusans','B',10);
+             $pdf->SetTextColor(0,0,0);
+             $pdf->Cell(150,10,'Nit: 900.342.751-5',0,0,'C');
+             $pdf->Ln(6);
+             $pdf->Cell(87);
+             $pdf->SetFont('dejavusans','B',10);
+             $pdf->SetTextColor(0,0,0);
+             $pdf->Cell(150,10,'31162255771',0,0,'C');
+             $pdf->Ln(6);
+             $pdf->Cell(87);
+             $pdf->SetFont('dejavusans','B',10);
+             $pdf->SetTextColor(0,0,0);
+             $pdf->Cell(150,10,'MUNICIPIO DE GUACHUCAL',0,0,'C');
 
             $pdf->Ln(10);
 
@@ -1163,7 +1164,7 @@ echo "</pre>"; */
             $pdf->Ln(15);
 
             $pdf->SetFont('dejavusans','B',10);
-            $pdf->Cell(264,6,"Punto de pago, oficina principal de ASUAAASTAB ubicada en la antigua Alcaldia ",1,0,'C',true);
+            $pdf->Cell(264,6,"Punto de pago, oficina principal de AJAMIP en la vereda Consuelo de Chillanquer",1,0,'C',true);
             $pdf->Ln(6);
 
             

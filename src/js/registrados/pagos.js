@@ -121,7 +121,7 @@
                     tr.appendChild(tdMonto)
                     tr.appendChild(tdNumeroPago)
                     if(estado==0){
-                        console.log('asdf')
+             
                         const tdPagoAnulado = document.createElement('TD');
                         tdPagoAnulado.classList.add('table__td');
                         tdPagoAnulado.innerHTML = `<span class="table__boton table__boton--vencida">Anulado</span>`
@@ -258,7 +258,7 @@
                 btnVerFactura.classList.add('actions__boton');
 
                 btnVerFactura.onclick = function(){
-                    previsualizarComprobante(factura_id);
+                    previsualizarComprobante(numero_pago);
                 }
                 btnVerFactura.textContent = 'Previzualizar';
 
@@ -269,10 +269,10 @@
 
             }
 
-            async function previsualizarComprobante(factura_id){
+            async function previsualizarComprobante(numero_pago){
                
 
-                const url =`/api/previsualizar-pago?key=${btoa(factura_id)}`;
+                const url =`/api/previsualizar-pago?key=${btoa(numero_pago)}`;
                 // Abre la URL en una nueva pestaña
                 window.open(url, '_blank');
 
